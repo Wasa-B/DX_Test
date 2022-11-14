@@ -4,11 +4,10 @@
 #ifndef _GRAPHICSCLASS_H_
 #define _GRAPHICSCLASS_H_
 
-
-//////////////
-// INCLUDES //
-//////////////
-#include <windows.h>
+///////////////////////
+// MY CLASS INCLUDES //
+///////////////////////
+#include "d3dclass.h"
 
 
 /////////////
@@ -39,6 +38,7 @@ private:
 
 private:
 
+    D3DClass* m_D3D;
 };
 
 #endif
