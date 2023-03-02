@@ -2,7 +2,7 @@
 // Filename: main.cpp
 ////////////////////////////////////////////////////////////////////////////////
 #include "systemclass.h"
-
+#pragma comment(linker, "/entry:WinMainCRTStartup /subsystem:console")
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pScmdline, int iCmdshow)
 {

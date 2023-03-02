@@ -2,6 +2,7 @@
 // Filename: systemclass.cpp
 ////////////////////////////////////////////////////////////////////////////////
 #include "systemclass.h"
+#include <iostream>
 SystemClass::SystemClass()
 {
     m_Input = 0;
@@ -128,6 +129,10 @@ bool SystemClass::Frame()
     if (m_Input->IsKeyDown(VK_ESCAPE))
     {
         return false;
+    }
+    //Test
+    if (m_Input->IsKeyDown(VK_SPACE)) {
+        cout << "Right" << endl;
     }
 
     // graphics객체의 작업을 처리합니다.
